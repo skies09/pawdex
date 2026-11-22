@@ -1,12 +1,10 @@
 /** Legal / support copy used in Settings and store readiness. */
 export const LEGAL = {
-	/**
-	 * Live HTTPS pages required by App Store Connect.
-	 * Host store/privacy.html and store/support.html, then paste the URLs here.
-	 * See APP_STORE_CHECKLIST.md at the repo root.
-	 */
-	privacyPolicyUrl: null as string | null,
-	supportUrl: null as string | null,
+	/** Live HTTPS pages for App Store Connect and in-app web links. */
+	privacyPolicyUrl: "https://pawdex-app.web.app/privacy",
+	supportUrl: "https://pawdex-app.web.app/support",
+	legalUrl: "https://pawdex-app.web.app/legal",
+	/** Placeholder until the live mailbox is confirmed. */
 	supportEmail: "contact@pawdex.com",
 	appName: "PawDex",
 	disclaimer:

@@ -170,6 +170,29 @@ export default function SettingsScreen({ navigation }: Props) {
 						</TouchableOpacity>
 					</>
 				) : null}
+				{LEGAL.legalUrl ? (
+					<>
+						<View style={styles.divider} />
+						<TouchableOpacity
+							style={styles.row}
+							onPress={() => openExternal(LEGAL.legalUrl as string)}
+							accessibilityRole="link"
+							accessibilityLabel="Open legal and disclaimer page"
+						>
+							<Ionicons
+								name="document-text-outline"
+								size={22}
+								color={colors.primary}
+							/>
+							<Text style={styles.rowLabel}>Legal & disclaimer</Text>
+							<Ionicons
+								name="chevron-forward"
+								size={18}
+								color={colors.textSecondary}
+							/>
+						</TouchableOpacity>
+					</>
+				) : null}
 			</Card>
 
 			<Text style={styles.sectionLabel}>Feedback</Text>
